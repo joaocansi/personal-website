@@ -67,14 +67,15 @@
 .contactWrapper p {
   font-size: 1.75rem;
   color: var(--text-gray);
+
+  margin-bottom: 3rem;
 }
 
-.contactWrapper .cvContact button {
-  margin-top: 1rem;
+.contactWrapper .cvContact a {
   border: 0;
 
   text-transform: uppercase;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 2.25rem;
 
   background: var(--light-blue);
   color: var(--white);
@@ -85,7 +86,7 @@
   transition: filter .5s;
 }
 
-.contactWrapper .cvContact button:hover {
+.contactWrapper .cvContact a:hover {
   filter: brightness(.9);
 }
 
