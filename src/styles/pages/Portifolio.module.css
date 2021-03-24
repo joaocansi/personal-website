@@ -1,0 +1,33 @@
+.portifolioContainer {
+  width: 100%;
+}
+
+.portifolioContainer main {
+  min-height: calc(100vh - 22.5vh);
+}
+
+.portifolioContainer main h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+
+  font-weight: 300;
+  color: var(--gray);
+
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5rem;
+}
+
+.projectsContainer > div {
+  margin: 2.5rem;
+}
+

@@ -1,0 +1,217 @@
+.aboutMeContainer {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.aboutMeContainer main {
+  width: 100%;
+  min-height: calc(100vh - 22.5vh);
+
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 0;
+  flex-direction: column;
+}
+
+.aboutMeContainer main section {
+  width: 90%;
+  max-width: 840px;
+
+  margin: 0 auto;
+}
+
+.aboutMeContainer main section:nth-child(n + 2) {
+  margin-top: 5rem;
+}
+
+.aboutMeContainer main section > h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+
+  font-weight: 300;
+  color: var(--gray);
+
+  text-align: center;
+}
+
+.whoSection > div {
+  width: 95%;
+  max-width: 600px;
+
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.whoSection > div > .whoImage {
+  min-width: 250px;
+  min-height: 250px;
+
+  background: url('https://github.com/joaocansi.png');
+
+  border-radius: 50%;
+  border: 5px solid var(--blue);
+
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.whoSection > div > div p {
+  font-size: 1.5rem;
+  color: var(--gray);
+
+  text-align: center;
+}
+
+
+.whoSection > div > div p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: var(--gray);
+}
+
+.whoSection > div > div p:last-child {
+  margin-top: 1rem;
+}
+
+.skillSection {
+  width: 95%;
+  max-width: 920px;
+
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.skillSection > div {
+  margin-top: 5rem;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.progressContainer:nth-child(n + 2) {
+  margin-top: 5rem;
+}
+
+.progressContainer {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.progressContainer > img {
+  width: 80%;
+
+  max-width: 500px;
+  height: auto;
+  
+  opacity: .2;
+  margin: 0 auto;
+}
+
+.progressContainer > div {
+  position: absolute;
+  width: 55%;
+
+  margin: 0 auto;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressContainer > div h5 {
+  text-transform: uppercase;
+  font-size: 7rem;
+
+  line-height: 60%;
+}
+
+.progressContainer > div p {
+  font-size: 2rem;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.node > div h5 {
+  color: var(--node);
+}
+
+.react > div h5 {
+  color: var(--react);
+}
+
+.html > div h5 {
+  color: var(--html);
+}
+
+.css > div h5 {
+  color: var(--css);
+}
+
+@media (min-width: 820px) {
+  .whoSection > div > .whoImage {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .whoSection > div {
+    flex-direction: row;
+  }
+
+  .whoSection > div > div p {
+    text-align: left;
+  }
+
+  .progressContainer:nth-child(2n + 1) > div {
+    right: 20%;
+    transform: translateX(20%);
+  }
+
+  .progressContainer:nth-child(2n + 1) > img {
+    margin: 0 auto 0 0;
+  }
+
+  .progressContainer:nth-child(2n + 1) > div {
+    text-align: left;
+    align-items: initial;
+  }
+
+  .progressContainer:nth-child(2n + 1) > div > p {
+    text-align: left;
+  }
+
+  .progressContainer:nth-child(2n) > div {
+    left: 20%;
+    transform: translateX(-20%);
+  }
+
+  .progressContainer:nth-child(2n) > img {
+    margin: 0 0 0 auto;
+  }
+
+  .progressContainer:nth-child(2n) > div {
+    text-align: right;
+    align-items: initial;
+  }
+
+  .progressContainer:nth-child(2n) > div > p {
+    text-align: right;
+  }
+} 

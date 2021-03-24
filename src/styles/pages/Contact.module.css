@@ -1,0 +1,102 @@
+.contactContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.contactContainer > main {
+  margin: 0 auto;
+  width: 100%;
+
+  max-width: 960px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+
+.contactWrapper > div {
+  margin: 2rem;
+  width: 300px;
+}
+
+.contactWrapper h5 {
+  font-weight: 800;
+  font-size: 4rem;
+
+  text-transform: uppercase;
+  color: var(--light-blue);
+}
+
+.contactWrapper .socialsContact > div {
+  margin-top: 1rem;
+}
+
+.contactWrapper .socialsContact > div > a {
+  font-size: 4rem;
+  margin: 0 1rem;
+
+  color: var(--blue);
+  cursor: pointer;
+
+  transition: filter .3s;
+}
+
+.contactWrapper .socialsContact > div > a:hover {
+  filter: brightness(1.25);
+}
+
+.contactWrapper .cvContact {
+  margin-top: 10rem;
+}
+
+.contactWrapper p {
+  font-size: 1.75rem;
+  color: var(--text-gray);
+}
+
+.contactWrapper .cvContact button {
+  margin-top: 1rem;
+  border: 0;
+
+  text-transform: uppercase;
+  padding: 1.25rem 1.5rem;
+
+  background: var(--light-blue);
+  color: var(--white);
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: filter .5s;
+}
+
+.contactWrapper .cvContact button:hover {
+  filter: brightness(.9);
+}
+
+@media (min-width: 680px) {
+  .contactWrapper > .cvContact {
+    margin-top: initial;
+  }
+}
+
+@media (min-width: 768px) { 
+  .contactContainer main {
+    height: calc(100% - 22.5vh);
+  }
+}

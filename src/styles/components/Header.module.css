@@ -1,0 +1,161 @@
+.headerContainer {
+  width: 100%;
+  height: 12.5vh;
+
+  background: var(--light-blue);
+  display: flex;
+  
+  align-items: center;
+  border-bottom-right-radius: 10px;
+
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: sticky;
+
+  top: 0;
+  text-transform: uppercase;
+
+  text-align: center;
+  z-index: 10;
+}
+
+.headerContainer > div {
+  max-width: 980px;
+  width: 90%;
+
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.headerContainer > div > div {
+  width: 100%;
+
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.headerContainer > div h1 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+
+  cursor: pointer;
+}
+
+.headerContainer > div h2 {
+  color: var(--white);
+  margin-top: -.75rem;
+
+  cursor: pointer;
+}
+
+.headerContainer > div > div > i {
+  z-index: 100;
+  color: var(--white);
+
+  font-size: 3rem;
+}
+
+.headerContainer nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: var(--light-blue);
+  width: 100%;
+
+  height: 100vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: scaleX(0);
+  transform-origin: right;
+
+  transition: transform .5s;
+  white-space: nowrap;
+}
+
+.headerContainer nav > ul > li {
+  margin: 10rem 0;
+  font-size: 2rem;
+
+  color: var(--white);
+  display: flex;
+
+  justify-content: center;
+}
+
+.headerContainer nav > ul > li a::after {
+  display: block;
+  content: '';
+
+  width: 100%;
+  border-bottom: 2px solid var(--white);
+
+  background: #fff;
+  box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transform: scale(0);
+  transition: transform .4s;
+
+  transform-origin: left;
+}
+
+.headerContainer nav > ul > li a:hover::after,
+.headerContainer nav > ul > li.linkActive a::after {
+  transform: scale(1);
+}
+
+.headerContainer nav.navbarOpened {
+  transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+  .headerContainer > div > div > i {
+    display: none;
+  }
+
+  .headerContainer nav {
+    position: initial; 
+    width: initial;
+
+    height: initial;
+    display: initial;
+  
+    transform: initial;
+    transform-origin: initial;
+  
+    transition: initial;
+    white-space: initial;
+
+    background: initial;
+  }
+
+  .headerContainer nav > ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headerContainer nav > ul > li {
+    margin: initial;
+    font-size: 1.75rem;
+  
+    color: var(--white);
+    white-space: nowrap;
+  }
+
+  .headerContainer nav > ul > li:nth-child(n + 2) {
+    margin-left: 5rem;
+  }
+}
+
+
